@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  server:
+    build: 
+      context: ./discord_bot
+      dockerfile: Dockerfile
+    volumes:
+      - ./discord_bot/:/discord_bot/
+    command: python3 bot.py
