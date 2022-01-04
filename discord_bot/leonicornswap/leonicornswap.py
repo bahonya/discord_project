@@ -1,6 +1,8 @@
 from discord.ext import commands
 from discord.ext import tasks
 from leonicornswap.api_requests import get_price_pair
+from discord import Webhook, AsyncWebhookAdapter
+import aiohttp
 
 
 class Leonicornswap(commands.Cog):
